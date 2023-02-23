@@ -16,6 +16,11 @@ In this problem, you will modify the gradient descent algorithm for linear regre
 
 ### Pseudocode for gradient descent
 
+- Compute the loss function (using the entire training set)
+- Compute the gradient of the loss function w.r.t. beta (using the entire training set)
+- Update parameters:
+    beta = beta – learning_rate*gradient
+
 
 ### Pseudocode for stochastic gradient descent
 
