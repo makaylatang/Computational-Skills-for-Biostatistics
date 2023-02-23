@@ -3,6 +3,7 @@
 instructor: Eardi Lila
 
 🌟 Stochastic gradient descent 
+
 🌟 S3 method shallow neural network and C implementation
 
 ## Stochastic gradient descent 
