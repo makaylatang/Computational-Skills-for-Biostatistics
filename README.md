@@ -29,11 +29,11 @@ Let x be a n × (p + 1) data-matrix and let y be the associated vector of outcom
 
 Let x be a n × (p + 1) data-matrix and let y be the associated vector of outcomes of length n. We assume a linear relationship between input and output. Let beta = beta_init be the parameter to be optimized and let niter be the desired number of iterations.
 
-for it = 1, 2, 3, ..., niter:
+`for it = 1, 2, 3, ..., niter:`
 
 - Split the n samples in the training set (same split for both x and y) into B groups that we call
 mini-batches (Similarly to what you do with k-fold cross-validation).
-- for mini_batch = 1, 2, ..., B:
+- `for mini_batch = 1, 2, ..., B`:
     - Compute the loss function (using the entire training set)
     - Compute gradient of the loss function w.r.t. beta (using only the observations in the current mini_batch)
     - Update parameters: beta = beta – learning_rate*gradient
