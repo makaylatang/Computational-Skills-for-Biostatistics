@@ -36,7 +36,7 @@ mini-batches (Similarly to what you do with k-fold cross-validation).
     - Compute gradient of the loss function w.r.t. beta (using only the observations in the current mini_batch)
     - Update parameters: `beta = beta – learning_rate*gradient`
 
-> Task:
+> Tasks:
 1. Implement and test a function lm_sgd that performs stochastic gradient descent as described above. Describe (in words and small code sections) the main changes you have made to the lm_gd code, introduced in class, to implement lm_sgd. Put the entire code in an appendix.
 
 2. Display the values of the loss function at every iteration in a scatter plot # iteration vs loss function for both lm_gd and lm_sgd. In light of this plot, why do you think the technique is called stochastic gradient descent?
