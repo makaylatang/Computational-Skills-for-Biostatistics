@@ -4,11 +4,11 @@ instructor: Eardi Lila
 
 > Contents
 
-🌟 Stochastic gradient descent 
+🌟 Stochastic Gradient Descent 
 
-🌟 Bootstrap
+🌟 S3 Method Bootstrap
 
-## Stochastic gradient descent 
+## Stochastic Gradient Descent 
 
 In class, we have introduced one of the most popular optimization techniques: gradient descent. However, for problems with very large n, gradient descent can be inefficient and stochastic gradient descent (a.k.a. batched gradient descent) is instead typically used. The main difference is that stochastic gradient descent, at each iteration, uses only random subsets of the n training sample to compute the gradient and update the parameter of interest (β in our problem).
 
@@ -43,7 +43,7 @@ mini-batches (Similarly to what you do with k-fold cross-validation).
 
 3. Generate a list of 20 random vectors beta_init. For every element in the list run stochastic gradient descent with that initialization value. Use purrr:map for both the generation of the random vectors and the application of lm_sgd (see Lecture 4). Display the 20 estimation errors ∥β − β0∥2, where β0 is the true beta used to generate the data and β is the estimated one from lm_sgd.
 
-## Bootstrap
+## S3 Method Bootstrap
 
 In this exercise, you will construct an S3 method bootstrap, for both the class `numeric` and `stratified`, with the following interface.
 
