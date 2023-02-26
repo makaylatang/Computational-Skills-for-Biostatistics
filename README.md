@@ -60,6 +60,5 @@ The function `bootstrap.my_class` will return the evaluation of the statistics e
 moment <- function(x, k) {
   (1/length(x))*sum((x-mean(x))ˆk)
 }
-
 ```
 
