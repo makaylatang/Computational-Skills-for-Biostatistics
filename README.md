@@ -8,6 +8,8 @@ instructor: Eardi Lila
 
 🌟 S3 Method Bootstrap
 
+🌟 S3 Method Shallow Neural Network 
+
 ## Stochastic Gradient Descent 
 
 In class, we have introduced one of the most popular optimization techniques: gradient descent. However, for problems with very large n, gradient descent can be inefficient and stochastic gradient descent (a.k.a. batched gradient descent) is instead typically used. The main difference is that stochastic gradient descent, at each iteration, uses only random subsets of the n training sample to compute the gradient and update the parameter of interest (β in our problem).
@@ -61,4 +63,18 @@ moment <- function(x, k) {
   (1/length(x))*sum((x-mean(x))ˆk)
 }
 ```
+
+## S3 Method Shallow Neural Network 
+
+In this exercise, you will refactor the shallow neural network code for binary classification provided in class and use the S3 object-oriented system.
+
+To this end, you will define a new S3 class named shallow_net that contains the parameters of your model. More in detail, define the following:
+
+- A constructor that given `p` and `q` returns an object shallow_net with randomly initialized parameters `theta` and `beta`.
+- An S3 method `predict` that for a given object of the type `shallow_net` and a *n2 × p* data matrix `X` returns a *n2*-vector with the predicted probabilities.
+- An S3 method `train`, that for a given a *n × p* data matrix `X`, a *n*-vector `y` of categorical outputs, the learning rate and number of iterations, uses gradient descent to learn the parameters of the neural network.
+
+Re-run Examples 1 and 2 provided in class by using the redesigned code.
+
+
 
