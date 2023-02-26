@@ -16,7 +16,7 @@ In class, we have introduced one of the most popular optimization techniques: gr
 
 In this problem, you will modify the gradient descent algorithm for linear regression introduced in class (you can also work on the logistic regression problem – slightly more challenging) to perform stochastic gradient descent optimization.
 
-### Pseudocode for gradient descent
+#### Pseudocode for gradient descent
 
 Let `x` be a n × (p + 1) data-matrix and let `y` be the associated vector of outcomes of length n. We assume a linear relationship between input and output. Let `beta = beta_init` be the parameter to be optimized and let `niter` be the desired number of iterations.
 
@@ -25,7 +25,7 @@ Let `x` be a n × (p + 1) data-matrix and let `y` be the associated vector of ou
 - Compute the gradient of the loss function w.r.t. beta (using the entire training set)
 - Update parameters: `beta = beta – learning_rate*gradient`
 
-### Pseudocode for stochastic gradient descent
+#### Pseudocode for stochastic gradient descent
 
 Let `x` be a n × (p + 1) data-matrix and let `y` be the associated vector of outcomes of length n. We assume a linear relationship between input and output. Let `beta = beta_init` be the parameter to be optimized and let niter be the desired number of iterations.
 
