@@ -8,7 +8,7 @@ instructor: Eardi Lila
 
 🌟 S3 Method Bootstrap
 
-🌟 S3 Method Shallow Neural Network 
+🌟 S3 Method Shallow Neural Network & C++ imputation
 
 ## Stochastic Gradient Descent 
 
@@ -64,7 +64,9 @@ moment <- function(x, k) {
 }
 ```
 
-## S3 Method Shallow Neural Network 
+## S3 Method Shallow Neural Network & C++ imputation
+
+#### S3 Method Shallow Neural Network
 
 In this exercise, you will refactor the shallow neural network code for binary classification provided in class and use the S3 object-oriented system.
 
@@ -75,6 +77,18 @@ To this end, you will define a new S3 class named shallow_net that contains the 
 - An S3 method `train`, that for a given a *n × p* data matrix `X`, a *n*-vector `y` of categorical outputs, the learning rate and number of iterations, uses gradient descent to learn the parameters of the neural network.
 
 Re-run Examples 1 and 2 provided in class by using the redesigned code.
+
+#### C++ imputation
+
+- Profile the S3 method `train`. Comment on the results.
+- Re-implement in C++ the computation of the gradient of the parameter `theta` of the neural network.
+- Define a new S3 method `train_fast` that is a variation of `train` that replaces the code for the computation of the gradient of `theta` with the Cpp function implemented by calling
+
+```
+dL_dtheta <- compute_gradient_theta(X_aug, f_hat, y, beta, A)
+```
+
+- Check that train and train_fast give the same results by re-running the Example 1 and 2 with train_fast. Compare their performance.
 
 
 
