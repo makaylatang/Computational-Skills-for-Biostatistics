@@ -6,6 +6,8 @@ instructor: Eardi Lila
 
 🌟 Stochastic gradient descent 
 
+🌟 Bootstrap
+
 ## Stochastic gradient descent 
 
 In class, we have introduced one of the most popular optimization techniques: gradient descent. However, for problems with very large n, gradient descent can be inefficient and stochastic gradient descent (a.k.a. batched gradient descent) is instead typically used. The main difference is that stochastic gradient descent, at each iteration, uses only random subsets of the n training sample to compute the gradient and update the parameter of interest (β in our problem).
@@ -40,4 +42,24 @@ mini-batches (Similarly to what you do with k-fold cross-validation).
 2. Display the values of the loss function at every iteration in a scatter plot # iteration vs loss function for both lm_gd and lm_sgd. In light of this plot, why do you think the technique is called stochastic gradient descent?
 
 3. Generate a list of 20 random vectors beta_init. For every element in the list run stochastic gradient descent with that initialization value. Use purrr:map for both the generation of the random vectors and the application of lm_sgd (see Lecture 4). Display the 20 estimation errors ∥β − β0∥2, where β0 is the true beta used to generate the data and β is the estimated one from lm_sgd.
+
+## Bootstrap
+
+In this exercise, you will construct an S3 method bootstrap, for both the class `numeric` and `stratified`, with the following interface.
+
+```
+bootstrap.my_class <- function(object, nboot, stat){... your code here ...}
+```
+The function `bootstrap.my_class` will return the evaluation of the statistics encoded in the function `stat` on each one of the bootstrapped vectors. 
+
+- Illustrate the use of your bootstrap generic function on objects of the class `numeric` and `stratified` using the mean, the median, and the standard deviation as the statistics of interest (e.g. make a histogram).
+
+- Generalize the methods bootstrap defined above to the case of an argument `stat` that is a function that can take additional arguments, e.g. a function the computes the kth moment. Test it.
+
+```
+moment <- function(x, k) {
+  (1/length(x))*sum((x-mean(x))ˆk)
+}
+
+```
 
