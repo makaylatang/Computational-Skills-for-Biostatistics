@@ -1,5 +1,5 @@
 # Computational Skills for Biostatistics
-#### UW BIOSTAT 561: Computational Skills fro Biostatistics (Spring 2022)
+#### UW BIOST 561: Computational Skills fro Biostatistics (Spring 2022)
 instructor: Eardi Lila
 
 > Contents
